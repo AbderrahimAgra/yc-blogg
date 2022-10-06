@@ -7,7 +7,6 @@ const {
   show,
 } = require('../controllers/article.controller');
 const router = express.Router();
-
 router.get('/', index);
 router.get('/:id', show);
 router.get('/create', create);
