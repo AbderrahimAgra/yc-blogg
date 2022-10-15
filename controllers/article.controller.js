@@ -2,8 +2,9 @@ const { Article } = require('../models');
 const { Category } = require('../models');
 
 exports.index = async (req, res) => {
-  const articles = await Article.findAll({ include: Category });
+  const articles = await Article.findAll({ include: Category, raw:true,nest:true });
   res.render('articles.ejs', { articles });
+  console.log(articles)
 };
 
 exports.show = async (req, res) => {
@@ -13,7 +14,7 @@ exports.show = async (req, res) => {
 
 exports.create = async (req, res) => {
   const categories = await Category.findAll();
-  res.render('create-article.ejs', { categories });
+  res.send('ok')
 };
 
 exports.store = async (req, res) => {
