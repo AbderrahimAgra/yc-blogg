@@ -1,8 +1,7 @@
 {
   "name": "yc-blog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -13,9 +12,19 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.23.2"
+    "sequelize": "^6.24.0",
+    "sequelize-cli": "^6.5.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbderrahimAgra/yc-blogg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AbderrahimAgra/yc-blogg/issues"
+  },
+  "homepage": "https://github.com/AbderrahimAgra/yc-blogg#readme",
+  "description": ""
 }

@@ -10,7 +10,7 @@
   </head>
   <body>
     <a href="/articles/create">create new article</a>
-    <% if (articles.length <= 0) { %>
+    <% if (articles==null || articles.length <= 0) { %>
     <h2>there no articles</h2>
     <% } else { %>
     <ul>
